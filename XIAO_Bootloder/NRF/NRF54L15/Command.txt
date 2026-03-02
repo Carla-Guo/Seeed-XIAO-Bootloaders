@@ -1,0 +1,43 @@
+# bt 扫描，开启后一直扫，需要指令才能停止
+bt init
+bt scan on
+bt scan off
+
+imu get
+
+mic capture
+
+#电池ADC读取
+gpio conf gpio1 15 o
+gpio set gpio1 15 1
+adc_read get
+
+#切换RF天线
+gpio conf gpio2 5 o
+gpio set gpio2 5 1 # RF2外置天线
+gpio set gpio2 5 0 # RF1板载天线
+
+# 读取是否在治具上
+gpio conf gpio1 5 iu
+gpio get gpio1 5
+
+# GPIO测试
+gpio conf gpio1 6 id
+gpio conf gpio1 7  id
+gpio conf gpio1 10 id
+gpio conf gpio1 11 id
+
+gpio conf gpio1 4 o
+gpio conf gpio2 2 o
+gpio conf gpio2 4 o
+gpio conf gpio2 1 o
+
+gpio set gpio1 4 1
+gpio set gpio2 2 1
+gpio set gpio2 4 1
+gpio set gpio2 1 1
+
+gpio get gpio1 6
+gpio get gpio1 7
+gpio get gpio1 10
+gpio get gpio1 11

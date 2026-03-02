@@ -1,0 +1,12 @@
+device ATSAMD11D14AU
+si SWD
+speed 4000
+rx 200
+exec EnableEraseAllFlashBanks
+erase
+h
+loadfile .\Document.hex
+loadfile .\arduino_samd11.hex
+rx 200
+g
+q

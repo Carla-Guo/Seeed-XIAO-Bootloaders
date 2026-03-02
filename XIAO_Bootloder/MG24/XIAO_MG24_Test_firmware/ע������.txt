@@ -1,0 +1,4 @@
+https://wiki.seeedstudio.com/cn/xiao_mg24_bluetooth/#ble-%E6%89%AB%E6%8F%8F%E5%99%A8
+:::提示 需要注意的是，在编译之前，必须在“Tools > Protocol stack”中选择“BLE (Silabs)”。
+
+板包 Silicon Labs的版本为2.2.0

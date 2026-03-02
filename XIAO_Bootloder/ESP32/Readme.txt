@@ -1,0 +1,1 @@
+ESP32的bin是用flash_download_tool_3.9.9_R2.exe将bootloader，bin，partitions，boot_app合并为一个bin再进行烧录，bootloader查看build文件下

@@ -1,0 +1,11 @@
+device RA4W1
+si SWD
+speed 6000
+rx 200
+exec EnableEraseAllFlashBanks
+erase
+h
+loadfile dfu_RA4M1.hex
+rx 200
+g
+q

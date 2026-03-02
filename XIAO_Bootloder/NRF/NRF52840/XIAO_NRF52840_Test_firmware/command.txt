@@ -1,0 +1,19 @@
+Dxy	->D: 控制数字接口命令，x: GPIO num, y: 0/1,	
+	Example: D10->控制D1输出L，D11-> 控制D1输出H
+
+Ax	->A: 控制模拟接口命令，x: 模拟通道
+	Example: A0 -> 读取A0的模拟电压， A1读取A1的电压
+
+Lxy	->L: 控制RGB状态，x=R/G/B, y=0/1
+	Example: LR0->控制RGB LED红色点亮，LR1->控制RGB LED红色熄灭
+
+Cx	->C: 控制充电电流命令，x=H/L/h/l: 设置充电电流大或者小
+	Example: CH->设置充电电流为高电流模式，CL设置充电电流小低电流模式
+
+F/f	->On board 2048K flash测试模式
+
+I/i	->On board 6 DOF测试模式
+
+M/m	->On board MIC测试模式，当检测到数字大于3K时退出
+
+B/b	-> BLE测试模式

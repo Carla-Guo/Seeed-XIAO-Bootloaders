@@ -1,0 +1,1 @@
+openocd\openocd.exe  -f openocd\interface/cmsis-dap.cfg -f openocd\nrf54l.cfg  -c "init; mww 0x5004b500 0x101; load_image xiao_nrf54l15.hex; reset run; exit"

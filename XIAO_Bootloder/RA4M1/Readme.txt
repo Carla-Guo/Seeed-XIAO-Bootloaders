@@ -1,0 +1,1 @@
+1. 同样是用arduino一起编译成bin文件，没有单独bootloader
